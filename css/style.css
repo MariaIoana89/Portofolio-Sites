@@ -58,25 +58,36 @@ body {
 }
 
 .project {
-	width: 33.3333%;
 	box-sizing: border-box;
 	text-align: center;
 	transition: 0.5s ease;
-}
-
-.img-project {
 	width: calc((100% - 20px)/3);
 	float: left;
 	margin-right: 10px;
 }
-.img-project:last-of-type {
+
+.project {
+	width: calc((100% - 20px)/3);
+	float: left;
+	margin-right: 10px;
+}
+.project:last-of-type {
 	margin-right: 0;
+}
+
+.img-project {
+	height: 225px;
+	width: 100%;
 }
 
 .work-titles {
 	width: 100%;
 }
 
+/*footer*/
+.footer {
+	padding-top: 20px;
+}
 /*responsive*/
 
 @media screen and (max-width: 400px) {
@@ -88,7 +99,7 @@ body {
 
 @media screen and (min-width: 401px) {
 	.projects {
-		flex-direction: column;
+		flex-direction: row;
 	}
 	.project {
 		width: 100%;
