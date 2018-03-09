@@ -55,7 +55,7 @@ body {
 .main-image {
 	margin: 0 auto;
 	width: 100%;
-	height: auto;
+	height: 500px;
 	display: flex;
 	display: -webkit-flex; /* Safari */
 	border: 1px solid #c3c3c3;
@@ -71,6 +71,12 @@ body {
 	max-width: 1600px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 	padding-bottom: 20px;
+}
+
+.work-titles {
+	width: 100%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+	padding: 15px;
 }
 
 .project {
@@ -94,11 +100,25 @@ body {
 	border-radius: 2px;
 }
 
-.work-titles {
-	width: 100%;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-	padding: 15px;
+/* unvisited link */
+.git-link:link {
+    color: blue;
 }
+
+/* visited link */
+.git-link:visited {
+    color: green;
+}
+
+/* mouse over link */
+.git-link:hover {
+    color: red;
+}
+
+/* selected link */
+.git-link:active {
+    color: yellow;
+} 
 
 /*footer*/
 .footer {
